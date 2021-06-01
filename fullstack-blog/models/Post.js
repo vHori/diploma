@@ -6,9 +6,13 @@ const postSchema = new Schema({
 		type: String,
 		required: true
 	},
-	text: {
+	review: {
 		type: String,
-		required: true
+		default: true
+	},
+	reviewResult: {
+		type: String,
+		default: true
 	},
 	date: {
 		type: Date,

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
     <title>Fullstack blog</title>
 </head>
 
@@ -41,19 +42,20 @@
             <h4>Create new post</h4>
             <div class="input-field">
                 <input id="title" type="text" class="validate" required>
-                <label for="title">Name</label>
+                <label for="title">Title</label>
             </div>
-            <div class="input-field">
-                <textarea id="text" class="materialize-textarea"></textarea>
-                <label for="text">Text</label>
+            <div class="input-field" id="reviewForm">
+                <textarea id="review" class="materialize-textarea"></textarea>
+                <label for="review">Review</label>
             </div>
+            <div id="emojiSection"></div>
         </div>
         <div class="modal-footer">
             <a class="waves-effect waves-light btn" id="createPost">Create post</a>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/script.js"></script>
+    <script src="/index.js"></script>
 </body>
 
 </html>

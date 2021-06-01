@@ -1,4 +1,5 @@
 const express = require('express')
+const natural = require('natural');
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const path = require('path')
@@ -8,7 +9,7 @@ const keys = require('./keys')
 const port = process.env.PORT || 5000
 const clientPath = path.join(__dirname, 'client')
 
-mongoose.connect(keys.mongoURI, {useNewUrlParser: true})
+mongoose.connect(keys.mongoURI, {useNewUrlParser: true, useUnifiedTopology: true})
 	.then(() => console.log('MongoDB connected.'))
 	.catch(err => console.log(err))
 
