@@ -1,2 +1,2 @@
-# simple-blog
-Simple fullstack-js blog
+# diploma
+Web-service for collecting and semantic analysis of feedback
